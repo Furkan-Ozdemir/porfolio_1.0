@@ -1,0 +1,71 @@
+h1,
+h2 {
+  color: #99762c; }
+
+p {
+  color: #81817e; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #e7e2d6;
+  font-size: 62.5%;
+  line-height: 1.6;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400; }
+
+.container {
+  margin: 1rem 2rem;
+  height: 100vh; }
+
+.header {
+  display: flex;
+  font-size: 2.25rem;
+  align-items: center;
+  justify-content: space-between; }
+
+.socials-nav__social {
+  margin: 0rem 1rem; }
+
+a,
+a:visited {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: black; }
+
+main {
+  margin: 4rem;
+  padding: 1rem 2rem; }
+
+.about-me {
+  display: flex; }
+  .about-me__main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    font-size: 1.5rem; }
+    .about-me__main-text {
+      padding-top: 1rem;
+      flex: 0 0 25%; }
+    .about-me__main-skills {
+      flex: 0 0 15%; }
+    .about-me__main .about-me-socials-nav__social {
+      margin: 0.7rem; }
+    .about-me__main-cv-button {
+      background-color: #99762c;
+      font-size: 1rem;
+      display: inline-block;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      border-radius: 100px;
+      padding: 0.7rem 2rem; }
+  .about-me__image-me {
+    max-width: 100%; }
