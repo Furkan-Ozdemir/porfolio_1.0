@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: $color-background;
+  // background-color: $color-background;
   font-size: 62.5%;
   line-height: 1.6;
 
@@ -15,8 +15,10 @@ body {
   font-weight: 400;
 }
 .container {
+  background-color: $color-background;
   margin: 1rem 2rem;
-  height: 100vh;
+  height: 130vh;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 90%);
 }
 
 .header {
@@ -42,7 +44,7 @@ a:visited {
   color: black;
 }
 
-main {
+.about-me-section {
   margin: 4rem;
   padding: 1rem 2rem;
 }
@@ -67,20 +69,35 @@ main {
     .about-me-socials-nav__social {
       margin: 0.7rem;
     }
-
-    &-cv-button {
-      background-color: #99762c;
-      font-size: 1rem;
-      display: inline-block;
-      border: none;
-      cursor: pointer;
-      text-decoration: none;
-      border-radius: 100px;
-      padding: 0.7rem 2rem;
-    }
   }
 
   &__image-me {
     max-width: 100%;
+  }
+}
+
+.btn {
+  background-color: #99762c;
+  font-size: 1rem;
+  display: block;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 0.7rem 2rem;
+  width: 10rem;
+}
+.zoom-button {
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+.svg-logos {
+  text-align: center;
+  transform: skewY(-5deg);
+  .svg-logo {
+    width: 3rem;
+    height: 3rem;
+    margin: -1rem 2rem -1rem 2rem;
   }
 }
